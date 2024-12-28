@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9ed0d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding-right: 50px; /* Ruimte voor de counter aan de rechterkant */
+    box-sizing: border-box;
+}
+
+#char-counter {
+    position: absolute;
+    right: 10px; /* Plaats de counter 10px van de rechterrand van de input */
+    top: 10px;  /* Plaats de counter verticaal gelijk aan de tekst */
+    font-size: 14px;
+    color: #555;
+    pointer-events: none; /* Zorg ervoor dat de counter geen interactie heeft */
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Zorg ervoor dat de knop niet tegen de invoerknop aan zit */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: darkred;
+}
+
+img {
+    width: 23px;
+    height: 23px; /* Zorg ervoor dat de iconen groot genoeg zijn */
+}
+
+/* Zorg ervoor dat de taaklijst-items als flexbox worden weergegeven */
+li {
+    display: flex;               /* Gebruik flexbox voor de items */
+    align-items: center;         /* Zorg ervoor dat de tekst en iconen verticaal uitgelijnd zijn */
+    justify-content: space-between; /* Verdeel de ruimte tussen tekst en iconen */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.icons-container {
+    display: flex;               /* Gebruik flexbox voor de iconen */
+    justify-content: flex-end;    /* Plaats de iconen aan de rechterkant */
+    gap: 10px;                   /* Voeg wat ruimte tussen de iconen toe */
+}
+
+/* Styles for the custom button */
+.btn {
+    border: none;
+    width: 9.5em;
+    height: 3.5em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #1C1A1C;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+}
+
+.sparkle {
+    fill: #AAAAAA;
+    transition: all 800ms ease;
+}
+
+.text {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+}
+
+.btn:hover {
+    background: linear-gradient(0deg,#A47CF3,#683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #9917FF;
+    transform: translateY(-2px);
+}
+
+.btn:hover .text {
+    color: white;
+}
+
+.btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+}
